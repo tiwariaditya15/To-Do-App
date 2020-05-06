@@ -34,6 +34,7 @@ class App extends Component{
         return (
           <div className="App">
           <AddTask addTask={this.addTask}/>
+          <hr/>
           <PrintTask tasks = {this.state.tasks} deleteTask = {this.deleteTask} editTask = {this.editTask}/>
           </div>
         );

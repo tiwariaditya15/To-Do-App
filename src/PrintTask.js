@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import cancel from './delete.webp';
+import edit from './edit.png';
 class PrintTask extends Component{
     
     render(){
@@ -9,7 +10,7 @@ class PrintTask extends Component{
                 <div className = "Print-Tasks">
                         {ele.task}
                         <img src = {cancel} onClick = {() => {this.props.deleteTask(ele.id)}}/> 
-                        <img src = {cancel} onClick = {() => {this.props.editTask(ele.task)}}/>                 
+                        <img src = {edit} onClick = {() => {this.props.editTask(ele.task)}}/>   
                 </div>
             );
         });

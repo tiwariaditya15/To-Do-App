@@ -40,22 +40,33 @@
 
 button, p, input{
   padding: 10px;
+  border-radius: 5px;
 }
 
 body{
   margin: 10px;
 }
 
+input{
+  width: 500px;
+}
+
 .Print-Tasks{
   background-color: #61dafb;
   height: 60px;
-  border-radius: 100px;
+  border: black solid 1px;
   margin-left: 300px;
   margin-right: 300px;
+  opacity: 0.8;
 }
 
 img{
-  padding-left: 150px;
   width: 15px;
   size: 15px;
+  
+}
+
+.Print-Tasks:hover{
+  opacity:1;
+  border-radius: 30%;
 }
