@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PrintTask from './PrintTask';
 
 
 class AddTask extends Component{
@@ -6,21 +7,24 @@ class AddTask extends Component{
         task : '',
         id:null
     }
+    
+    
+
     handleChange = (e) => {
-       
         this.setState({
             [e.target.id]: e.target.value,
             id: Math.floor(Math.random() * Math.floor(15))
         });
-     
-    }
+       
+     }
 
     
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.addTask(this.state);
         this.setState({
-            task : ''
+            task : '',
+            id: null
         });
         
     }

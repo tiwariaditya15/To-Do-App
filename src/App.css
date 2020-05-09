@@ -63,7 +63,7 @@ input{
 img{
   width: 15px;
   size: 15px;
-  
+  padding-left: 150px;
 }
 
 .Print-Tasks:hover{

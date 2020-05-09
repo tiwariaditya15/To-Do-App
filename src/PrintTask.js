@@ -7,9 +7,8 @@ class PrintTask extends Component{
         const tasks = this.props.tasks;
         const printTasks = tasks.map(ele => {
             return (
-                <div className = "Print-Tasks">
-                        {ele.task}
-                        <img src = {cancel} onClick = {() => {this.props.deleteTask(ele.id)}}/> 
+                <div className = "Print-Tasks" onClick = {() => {this.props.deleteTask(ele.id)}}>
+                        {ele.task} 
                         <img src = {edit} onClick = {() => {this.props.editTask(ele.task)}}/>   
                 </div>
             );
